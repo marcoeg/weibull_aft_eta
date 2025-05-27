@@ -146,3 +146,7 @@ The current synthetic data approach is excellent for development and validation,
    - Real-time feature computation pipeline
    - Model monitoring and retraining strategy
    - A/B testing framework for model comparison
+
+## License
+
+Copyright (c) 2025 Graziano Labs Corp. All rights reserved.
