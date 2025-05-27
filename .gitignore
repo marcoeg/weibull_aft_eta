@@ -172,3 +172,68 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+
+###
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# Data
+data/
+*.csv
+*.xlsx
+*.pkl
+*.pickle
+
+# Models
+models/
+*.h5
+*.hdf5
+*.joblib
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+*.cover
+.hypothesis/
+
+# Documentation
+docs/_build/
+docs/.doctrees/
+
+# Temporary files
+*.tmp
+*.bak
+*.log
+
+# Results (keep structure but not files)
+results/figures/*.png
+!results/figures/.gitkeep
+results/reports/*.html
+results/reports/*.pdf
+!results/reports/.gitkeep
