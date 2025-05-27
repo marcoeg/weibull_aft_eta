@@ -83,9 +83,7 @@ predictions, confidence = model.predict(X_test)
 
 ## Visualization
 
-The model can generate survival curves showing the probability of remaining unavailable over time:
-
-![Survival Curves](results/figures/survival_curves.png)
+The model can generate survival curves showing the probability of remaining unavailable over time in the file `results/figures/survival_curves.png`.
 
 These curves help understand:
 - How availability probability changes over time
@@ -102,35 +100,33 @@ cd weibull_aft_eta
 # Install dependencies
 pip install -r requirements.txt
 
-# Run tests
-python -m pytest tests/
+# Train the model
+python scripts/train_weibull_model.py
+
+# Evaluate and visualize
+python scripts/evaluate_model.py
 ```
 
 ## Project Structure
 
 ```
 weibull_aft_eta/
-├── README.md                    # Comprehensive project documentation
-├── requirements.txt             # All Python dependencies
+├── README.md                   # Comprehensive project documentation
+├── requirements.txt            # All Python dependencies
 ├── .gitignore                  # Properly configured git ignore
 │
-├── src/                        # Core implementation
-│   ├── eta_model_weibull.py   # The Weibull AFT model (copy from notebooks)
+├── src/                        # Core model implementation
+│   ├── eta_model_weibull.py    # The Weibull AFT model (copy from notebooks)
 │   └── data_generator.py       # Synthetic data generation
 │
-├── scripts/                    # Executable scripts
+├── scripts/                    # Training and evaluation scripts
 │   ├── train_weibull_model.py  # Complete training pipeline
 │   └── evaluate_model.py       # Evaluation and visualization
 │
-└── results/                    # Generated outputs
-    ├── figures/               # Plots and visualizations
-    └── reports/               # Analysis reports
+└── results/                    # Generated visualizations and reports
+    ├── figures/                # Plots and visualizations
+    └── reports/                # Analysis reports
 ```
-- `src/`: Core model implementation
-- `scripts/`: Training and evaluation scripts
-- `tests/`: Unit tests
-- `notebooks/`: Exploratory analysis
-- `results/`: Generated visualizations and reports
 
 ## Future Improvements
 
