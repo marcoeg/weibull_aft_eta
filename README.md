@@ -2,8 +2,6 @@
 
 This project implements a Weibull Accelerated Failure Time (AFT) model to predict the estimated time to availability (ETA) for users based on their device telemetry, calendar data, and activity patterns.
 
-Based on telemetry data of the Tweelin Solution and as detailed in the "Tweelin Data Privacy Brief".
-
 ## Overview
 
 The Weibull AFT model treats user availability as a "time-to-event" problem, where we predict how long until a user becomes available for a voice call. This approach naturally handles the probabilistic nature of availability and provides confidence intervals for predictions.
